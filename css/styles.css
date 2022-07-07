@@ -790,6 +790,7 @@ img {
 	transition: background-color var(--main-transition);
 }
 
-.modal-close:hover {
-	background-color: rgba(255, 0, 0, 0.8);
+.modal-close:hover,
+.modal-close:focus {
+	fill: var(--accent-color);
 }

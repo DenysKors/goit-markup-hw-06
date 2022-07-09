@@ -909,11 +909,8 @@ img {
 	padding-right: 12px;
 
 	min-height: 40px;
-}
 
-.form-input:focus,
-.form-comment:focus {
-	border-color: var(--accent-color);
+	transition: border-color var(--main-transition);
 }
 
 .form-input:focus + .form-icon {
@@ -926,6 +923,8 @@ img {
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
 
+	transition: border-color var(--main-transition);
+
 	resize: none;
 }
 
@@ -936,4 +935,9 @@ img {
 	left: 12px;
 
 	transition: fill var(--main-transition);
+}
+
+.form-input:focus,
+.form-comment:focus {
+	border-color: var(--accent-color);
 }

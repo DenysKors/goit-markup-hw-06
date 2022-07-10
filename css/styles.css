@@ -904,7 +904,7 @@ img {
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
 
-	padding-left: 40px;
+	padding-left: 42px;
 	padding-right: 12px;
 
 	min-height: 40px;
@@ -943,12 +943,9 @@ img {
 }
 
 .form-checkbox {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-
 	margin-top: 20px;
-	gap: 30px;
+
+	text-align: center;
 }
 
 .checkbox-text {
@@ -961,6 +958,26 @@ img {
 }
 
 .checkbox-label {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	gap: 8px;
+
+	margin-bottom: 30px;
+}
+
+.checkbox-input:checked + .checkbox-custom {
+	border: transparent;
+	background-color: var(--accent-color);
+}
+
+.checkbox-custom {
+	width: 16px;
+	height: 15px;
+
+	border: 2px solid #212121;
+	border-radius: 2px;
 }
 
 .contract-link {

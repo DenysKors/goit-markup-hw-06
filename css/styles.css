@@ -955,10 +955,12 @@ img {
 	letter-spacing: 0.03em;
 
 	color: var(--text-color);
+
+	user-select: none;
 }
 
 .checkbox-label {
-	display: flex;
+	display: inline-flex;
 	justify-content: center;
 	align-items: center;
 
@@ -968,16 +970,20 @@ img {
 }
 
 .checkbox-input:checked + .checkbox-custom {
-	border: transparent;
+	border-color: var(--accent-color);
 	background-color: var(--accent-color);
 }
 
 .checkbox-custom {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
 	width: 16px;
 	height: 15px;
 
 	border: 2px solid #212121;
 	border-radius: 2px;
+	transition: background-color var(--main-transition), border-color var(--main-transition);
 }
 
 .contract-link {
